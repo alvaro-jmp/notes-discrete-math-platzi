@@ -5,6 +5,7 @@ https://observablehq.com/d/1dbb5ea4edb292ae
 Light version:
 
 https://notes-discrete-math-platzi.alvarojmp.repl.co
+
 https://observablehq.com/d/ae848018b11d54bc
 
 If you want to play, test, etc with [repl.it](https://repl.it/):
