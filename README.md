@@ -1,6 +1,8 @@
 # Notas - Platzi - Matemáticas discretas - Light Version - [SPANISH]
 
-https://observablehq.com/d/1dbb5ea4edb292ae
+[FULL Version] with js modifiable:
+
+https://observablehq.com/d/1dbb5ea4edb292ae 
 
 Light version:
 
