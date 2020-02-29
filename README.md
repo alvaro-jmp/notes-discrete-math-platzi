@@ -1,4 +1,4 @@
-# Notas - Platzi - Matemáticas discretas [FULL] [SPANISH]
+# Notas - Platzi - Matemáticas discretas - Light Version - [SPANISH]
 
 https://observablehq.com/d/1dbb5ea4edb292ae
 
