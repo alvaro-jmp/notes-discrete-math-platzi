@@ -8,7 +8,7 @@ https://observablehq.com/d/1dbb5ea4edb292ae
 
 Light version:
 
-https://notes-discrete-math-platzi.alvarojmp.repl.co
+https://alvaro-jmp.web.app/notes-discrete-math-platzi/
 
 https://observablehq.com/d/ae848018b11d54bc
 
