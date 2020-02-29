@@ -4,15 +4,21 @@
 
 https://observablehq.com/d/1dbb5ea4edb292ae 
 
+<br />
+
 Light version:
 
 https://notes-discrete-math-platzi.alvarojmp.repl.co
 
 https://observablehq.com/d/ae848018b11d54bc
 
+<br />
+
 If you want to play, test, etc with [repl.it](https://repl.it/):
 
 https://repl.it/@alvarojmp/notes-discrete-math-platzi
+
+<br />
 
 View this notebook in your browser by running a web server in this folder. For
 example:
