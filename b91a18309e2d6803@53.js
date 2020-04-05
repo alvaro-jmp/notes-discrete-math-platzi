@@ -1,5 +1,5 @@
 // https://observablehq.com/d/b91a18309e2d6803@53
-import define1 from "./1338841536b09034@1047.js";
+import define1 from "./1338841536b09034@1077.js";
 
 export default function define(runtime, observer) {
   const main = runtime.module();

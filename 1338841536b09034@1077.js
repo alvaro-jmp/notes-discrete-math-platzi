@@ -1,4 +1,4 @@
-// https://observablehq.com/@alvaro-jmp/lib@1047
+// https://observablehq.com/@alvaro-jmp/lib@1077
 export default function define(runtime, observer) {
   const main = runtime.module();
   main.variable(observer()).define(["md"], function(md){return(
@@ -130,23 +130,35 @@ Options for d3-graphviz => ${a_target_blank('https://github.com/magjac/d3-graphv
   main.variable(observer()).define(["md"], function(md){return(
 md `---`
 )});
-  main.variable(observer("adot_iterator")).define("adot_iterator", ["Promises"], function(Promises){return(
-async function* adot_iterator(_length = 0, is_infinite = false, _duration = 1000, _button = false) {  
-  //const _id = random_color()  // As an ID
-  let i = 0
-  yield i;
+  main.variable(observer("adot_iterator")).define("adot_iterator", ["random_color"], function(random_color){return(
+async function* adot_iterator(_length = 0, is_infinite = false, _duration = [], _button = false, _pass = {enable: true}) {
   _button
+ 
+  const _id = random_color()  // As an ID  
+  let i = 0
+  yield i
+  //console.log('_pass: ', _pass)  
+    if (!_pass.enable) {
+      _pass.enable = true
+      //console.log('_pass :', _pass)
+      return
+    }
+      
+  const fix_duration = () => {
+    return _duration[i] ? (_duration[i]) + 100 : 1100
+  }
+  
   while (true) {
     //console.log('adot_iterator',_id, i)
+    //console.log('_duration[i]:', _duration[i])
     if (i === _length) { 
       if (is_infinite)
         i = 0
-      else if (!_button)
-        return
       else
         return
     }
-    yield Promises.delay(_duration + 100, i);
+    yield i
+    await new Promise((resolve, reject) => setTimeout(resolve, fix_duration()))    
     ++i
   }
 }
@@ -226,7 +238,7 @@ require('expect@24.8.0/build-es5/index.js').catch(() => window["setImmediate"])
 }
 )});
   main.variable(observer("d3__graph")).define("d3__graph", ["require"], function(require){return(
-require("d3-graphviz", "d3-selection", "d3-transition", "d3-ease")
+require("d3-graphviz@2.6.1", "d3-selection@1.4.1", "d3-transition@1.3.2", "d3-ease@1.0.6")
 )});
   main.variable(observer("no_char")).define("no_char", function(){return(
 'no char 😅! '
@@ -288,6 +300,9 @@ document.querySelector('div.dib.relative.w-100.code.f6.lh-copy.black.pen')
 )});
   main.variable(observer()).define(["get_len_html_nodes_observablehq"], function(get_len_html_nodes_observablehq){return(
 get_len_html_nodes_observablehq()
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz()
 )});
   main.variable(observer("credits")).define("credits", ["md"], function(md){return(
 md `---

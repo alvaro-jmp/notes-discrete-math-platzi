@@ -1,4 +1,4 @@
-// https://observablehq.com/@magjac/d3-graphviz@1331
+// https://observablehq.com/d/65db15c5f0ffd1a8@1332
 import define1 from "./e93997d5089d7165@2227.js";
 
 export default function define(runtime, observer) {
@@ -124,7 +124,7 @@ async function (strings) {
 md`### Dependencies`
 )});
   main.variable(observer("d3")).define("d3", ["require"], function(require){return(
-require("d3-graphviz", "d3-selection", "d3-transition")
+require("d3-graphviz@2.6.1", "d3-selection@1.4.1", "d3-transition@1.3.2")
 )});
   const child1 = runtime.module(define1);
   main.import("slider", child1);

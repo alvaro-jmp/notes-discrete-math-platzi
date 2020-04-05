@@ -1,7 +1,7 @@
-// https://observablehq.com/d/1dbb5ea4edb292ae@4261
-import define1 from "./1338841536b09034@1047.js";
+// https://observablehq.com/d/1dbb5ea4edb292ae@6098
+import define1 from "./1338841536b09034@1077.js";
 import define2 from "./b91a18309e2d6803@53.js";
-import define3 from "./666acd0c3c652c48@1331.js";
+import define3 from "./65db15c5f0ffd1a8@1332.js";
 import define4 from "./e93997d5089d7165@2227.js";
 
 export default function define(runtime, observer) {
@@ -23,6 +23,7 @@ md `---
 <li><a href="#conjuntos">Conjuntos.</a></li>
 <li><a href="#theory_graf">Teoría de gráficas.</a></li>
 <li><a href="#tree">Árboles.</a></li>
+<li><a href="#algorithms">Algoritmos</a></li>
 <li><a href="#dependencies">Dependencias.</a></li>
 <li><a href="#debug_test">Debug/Test.</a></li>
 <li><a href="#readme">README</a></li>
@@ -2625,7 +2626,7 @@ total__2_7 - (resto__2_7 + ing_admin_2_7 + econm__2_7 + ing_econm__2_7 + ing__2_
 25
 )});
   main.variable(observer()).define(["md","tex","admin__2_7"], function(md,tex,admin__2_7){return(
-md `<mark>Los administradores son ${tex `${admin__2_7}`}</mark>`
+md `<mark>Los administradores son ${tex `${admin__2_7}`}.</mark>`
 )});
   main.variable(observer("theory_graf")).define("theory_graf", ["md"], function(md){return(
 md `---
@@ -2875,6 +2876,9 @@ adot.bind(this)`${dots__3_1[iterator__3_1]}${{engine: 'neato', zoom: false, useW
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__3_1")).define("play__3_1", ["Generators", "viewof play__3_1"], (G, _) => G.input(_));
+  main.variable(observer("iterator__3_1")).define("iterator__3_1", ["adot_iterator","dots__3_1","play__3_1","pass__3_1"], function(adot_iterator,dots__3_1,play__3_1,pass__3_1){return(
+adot_iterator(dots__3_1.length, false, undefined, play__3_1, pass__3_1)
+)});
   main.variable(observer("dots__3_1")).define("dots__3_1", function(){return(
 [
   `graph {          
@@ -3012,8 +3016,8 @@ button({value: "Reproducir animación"})
       }`
 ]
 )});
-  main.variable(observer("iterator__3_1")).define("iterator__3_1", ["adot_iterator","dots__3_1","play__3_1"], function(adot_iterator,dots__3_1,play__3_1){return(
-adot_iterator(dots__3_1.length, false, undefined, play__3_1)
+  main.variable(observer("pass__3_1")).define("pass__3_1", function(){return(
+Object.create({enable: false})
 )});
   main.variable(observer()).define(["md","tex"], function(md,tex){return(
 md `Se observa que dos de sus vértices ${tex `f, e`} tienen grado impar.
@@ -3035,6 +3039,9 @@ adot.bind(this)`${dots__3_2[iterator__3_2]}${{engine: 'neato', zoom: false, useW
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__3_2")).define("play__3_2", ["Generators", "viewof play__3_2"], (G, _) => G.input(_));
+  main.variable(observer("iterator__3_2")).define("iterator__3_2", ["adot_iterator","dots__3_2","play__3_2","pass__3_2"], function(adot_iterator,dots__3_2,play__3_2,pass__3_2){return(
+adot_iterator(dots__3_2.length, false, undefined, play__3_2, pass__3_2)
+)});
   main.variable(observer("dots__3_2")).define("dots__3_2", function(){return(
 [
   `graph {    
@@ -3208,8 +3215,8 @@ button({value: "Reproducir animación"})
     }`
 ]
 )});
-  main.variable(observer("iterator__3_2")).define("iterator__3_2", ["adot_iterator","dots__3_2","play__3_2"], function(adot_iterator,dots__3_2,play__3_2){return(
-adot_iterator(dots__3_2.length, false, undefined, play__3_2)
+  main.variable(observer("pass__3_2")).define("pass__3_2", function(){return(
+Object.create({ enable: false })
 )});
   main.variable(observer()).define(["md","tex"], function(md,tex){return(
 md `Se observa que todos los vértices tienen grado par.<br>
@@ -3234,6 +3241,9 @@ adot.bind(this)`${dots__3_3[iterator__3_3]}${{engine: 'neato', zoom: false, useW
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__3_3")).define("play__3_3", ["Generators", "viewof play__3_3"], (G, _) => G.input(_));
+  main.variable(observer("iterator__3_3")).define("iterator__3_3", ["adot_iterator","dots__3_3","play__3_3","pass__3_3"], function(adot_iterator,dots__3_3,play__3_3,pass__3_3){return(
+adot_iterator(dots__3_3.length, false, undefined, play__3_3, pass__3_3)
+)});
   main.variable(observer("dots__3_3")).define("dots__3_3", function(){return(
 [
   `graph {          
@@ -3305,8 +3315,8 @@ button({value: "Reproducir animación"})
       }`
 ]
 )});
-  main.variable(observer("iterator__3_3")).define("iterator__3_3", ["adot_iterator","dots__3_3","play__3_3"], function(adot_iterator,dots__3_3,play__3_3){return(
-adot_iterator(dots__3_3.length, false, undefined, play__3_3)
+  main.variable(observer("pass__3_3")).define("pass__3_3", function(){return(
+Object.create({enable: false})
 )});
   main.variable(observer()).define(["md","tex"], function(md,tex){return(
 md `Se observa que dos de sus vértices ${tex `f, e`} tienen grado impar.
@@ -3328,6 +3338,9 @@ adot.bind(this)`${dots__3_4[iterator__3_4]}${{engine: 'neato', zoom: false, useW
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__3_4")).define("play__3_4", ["Generators", "viewof play__3_4"], (G, _) => G.input(_));
+  main.variable(observer("iterator__3_4")).define("iterator__3_4", ["adot_iterator","dots__3_4","play__3_4","pass__3_4"], function(adot_iterator,dots__3_4,play__3_4,pass__3_4){return(
+adot_iterator(dots__3_4.length, false, undefined, play__3_4, pass__3_4)
+)});
   main.variable(observer("dots__3_4")).define("dots__3_4", function(){return(
 [
   `graph {    
@@ -3431,8 +3444,8 @@ button({value: "Reproducir animación"})
     }`
 ]
 )});
-  main.variable(observer("iterator__3_4")).define("iterator__3_4", ["adot_iterator","dots__3_4","play__3_4"], function(adot_iterator,dots__3_4,play__3_4){return(
-adot_iterator(dots__3_4.length, false, undefined, play__3_4)
+  main.variable(observer("pass__3_4")).define("pass__3_4", function(){return(
+Object.create({enable: false})
 )});
   main.variable(observer()).define(["md","tex"], function(md,tex){return(
 md `Se observa que todos los vértices tienen grado par.<br>
@@ -3905,8 +3918,8 @@ adot.bind(this)`${dots_graph_path_hamilton__3__9[iterator__3_9]}${{engine: 'neat
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__3_9")).define("play__3_9", ["Generators", "viewof play__3_9"], (G, _) => G.input(_));
-  main.variable(observer("iterator__3_9")).define("iterator__3_9", ["adot_iterator","dots_graph_path_hamilton__3__9","play__3_9"], function(adot_iterator,dots_graph_path_hamilton__3__9,play__3_9){return(
-adot_iterator(dots_graph_path_hamilton__3__9.length, false, undefined, play__3_9)
+  main.variable(observer("iterator__3_9")).define("iterator__3_9", ["adot_iterator","dots_graph_path_hamilton__3__9","play__3_9","pass__3_9"], function(adot_iterator,dots_graph_path_hamilton__3__9,play__3_9,pass__3_9){return(
+adot_iterator(dots_graph_path_hamilton__3__9.length, false, undefined, play__3_9, pass__3_9)
 )});
   main.variable(observer("dots_graph_path_hamilton__3__9")).define("dots_graph_path_hamilton__3__9", function(){return(
 [
@@ -4010,6 +4023,9 @@ g -- h  [len=1.5][color=red,penwidth=3.0];
 }`
 ]
 )});
+  main.variable(observer("pass__3_9")).define("pass__3_9", function(){return(
+Object.create({enable: false})
+)});
   main.variable(observer("vertices_matrix__3__9")).define("vertices_matrix__3__9", ["vertices_matrix","matrix_adj__3__9"], function(vertices_matrix,matrix_adj__3__9){return(
 vertices_matrix(matrix_adj__3__9)
 )});
@@ -4044,8 +4060,11 @@ adot.bind(this)`${dots_graph_path_hamilton__3__10[iterator__3_10]}${{engine: 'ne
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__3_10")).define("play__3_10", ["Generators", "viewof play__3_10"], (G, _) => G.input(_));
-  main.variable(observer("iterator__3_10")).define("iterator__3_10", ["adot_iterator","dots_graph_path_hamilton__3__10","play__3_10"], function(adot_iterator,dots_graph_path_hamilton__3__10,play__3_10){return(
-adot_iterator(dots_graph_path_hamilton__3__10.length, false, undefined, play__3_10)
+  main.variable(observer("iterator__3_10")).define("iterator__3_10", ["adot_iterator","dots_graph_path_hamilton__3__10","play__3_10","pass__3_10"], function(adot_iterator,dots_graph_path_hamilton__3__10,play__3_10,pass__3_10){return(
+adot_iterator(dots_graph_path_hamilton__3__10.length, false, undefined, play__3_10, pass__3_10)
+)});
+  main.variable(observer("pass__3_10")).define("pass__3_10", function(){return(
+Object.create({enable: false})
 )});
   main.variable(observer("dots_graph_path_hamilton__3__10")).define("dots_graph_path_hamilton__3__10", function(){return(
 [
@@ -4822,8 +4841,54 @@ ${custom_graphviz(
 `, {engine: 'dot', zoom: false, useWorker : false})}
 `
 )});
+  main.variable(observer()).define(["md","more_info_es","custom_graphviz"], function(md,more_info_es,custom_graphviz){return(
+md `**Árbol binario lleno**: Se dice que un árbol binario está lleno si es un árbol binario de altura k que tiene 2k-1 nodos. 
+<br><br>
+**Árbol binario completo**: Se dice que un árbol binario de altura k está completo si está lleno hasta altura k-1 y el último nivel esta ocupado de izquierda a derecha.
+<br><br>
+${more_info_es('http://informatica.uv.es/iiguia/AED/teoria/apuntes/cuatr2/tema14.pdf')}
+<br><br>
+Binario completo-
+${custom_graphviz(
+`graph {
+  a --b;
+  a -- c;
+  b -- d;
+  b -- e;
+  e -- h;
+  e -- i;
+  c -- f;
+  c -- g;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})}
+<br><br>
+Binario lleno.
+${custom_graphviz(
+`graph {
+  a --b;
+  a -- c;
+  b -- d;
+  b -- e;  
+  c -- f;
+  c -- g;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})}
+`
+)});
+  main.variable(observer()).define(["md","more_info_es","custom_graphviz"], function(md,more_info_es,custom_graphviz){return(
+md `**Árbol degenerado**: Un árbol binario degenerado es un árbol en el que todos los nodos tienen solamente un subárbol excepto el ultimo.
+<br><br>
+${more_info_es('https://tutorias.co/preguntas-respuestas/que-es-un-arbol-degenerado.html')}
+${custom_graphviz(
+`graph {
+  c -- b -- d -- a;
+}
+`,{engine: 'dot', zoom: false, useWorker: false})}
+`
+)});
   main.variable(observer()).define(["md","tex"], function(md,tex){return(
-md `## Determinar el nivel y la altura del siguiente árbol considerando como raíz el vértice ${tex `d`}`
+md `<br>
+## Determinar el nivel y la altura del siguiente árbol considerando como raíz el vértice ${tex `d`}`
 )});
   main.variable(observer()).define(["md","custom_graphviz"], function(md,custom_graphviz){return(
 md `Árbol libre.
@@ -4958,8 +5023,11 @@ adot.bind(this)`${dots_graph__4__1[iterator__4_1]}${{engine: 'neato', zoom: fals
 button({value: "Reproducir animación"})
 )});
   main.variable(observer("play__4_1")).define("play__4_1", ["Generators", "viewof play__4_1"], (G, _) => G.input(_));
-  main.variable(observer("iterator__4_1")).define("iterator__4_1", ["adot_iterator","dots_graph__4__1","play__4_1"], function(adot_iterator,dots_graph__4__1,play__4_1){return(
-adot_iterator(dots_graph__4__1.length, false, undefined, play__4_1)
+  main.variable(observer("iterator__4_1")).define("iterator__4_1", ["adot_iterator","dots_graph__4__1","play__4_1","pass__4_1"], function(adot_iterator,dots_graph__4__1,play__4_1,pass__4_1){return(
+adot_iterator(dots_graph__4__1.length, false, undefined, play__4_1, pass__4_1)
+)});
+  main.variable(observer("pass__4_1")).define("pass__4_1", function(){return(
+Object.create({enable: false})
 )});
   main.variable(observer("dots_graph__4__1")).define("dots_graph__4__1", function(){return(
 [
@@ -5106,6 +5174,2325 @@ adot_iterator(dots_graph__4__1.length, false, undefined, play__4_1)
 }`
 ]
 )});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+` graph {  
+  g -- d [label=4];
+  g -- f [label=3];
+  f -- b [label=3];  
+  f -- e [label=2];
+  f -- h [label=3];  
+  h -- i [label=2];    
+  b -- a [label=2];
+  a -- c [label=3];
+}
+`, {engine: 'dot', zoom: false, useWorker: false}
+)
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `3 + 4 = 7`}
+## ${tex `3 + 2 + 3 = 8`}
+## ${tex `2 + 2 = 4`}
+## ${tex `3`}
+`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+# Árbol binario, estructura recursiva.
+
+`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+a -- b;
+a -- c;
+b -- d;
+b -- e;
+e -- h;
+e -- i;
+c -- f;
+c -- g;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md","custom_graphviz"], function(md,custom_graphviz){return(
+md `### Raíz
+${custom_graphviz(`graph { a }`)}
+`
+)});
+  main.variable(observer()).define(["md","custom_graphviz"], function(md,custom_graphviz){return(
+md `### Sub árbol izquierdo
+${custom_graphviz(
+`graph {
+b -- d;
+b -- e;
+e -- h;
+e -- i;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})}
+`
+)});
+  main.variable(observer()).define(["md","custom_graphviz"], function(md,custom_graphviz){return(
+md `### Sub árbol derecho
+${custom_graphviz(
+`graph {
+c -- f;
+c -- g;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})}
+`
+)});
+  main.variable(observer()).define(["md","custom_graphviz"], function(md,custom_graphviz){return(
+md `Sub árbo derecho se puede descomponer en: 
+<br><br>
+Raíz.
+${custom_graphviz('graph {c}')}
+<br><br>
+Sub árbol izq.
+${custom_graphviz('graph {f}')}
+<br><br>
+Sub árbol der.
+${custom_graphviz('graph {g}')}
+`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Recorrido de árboles
+
+`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  a [pos="3,5!",xlabel="Raíz"];
+  b [pos="1,4!",xlabel="Hijo izquierdo"];
+  c [pos="5,4!",xlabel="Hijo derecho"];
+  d [pos="0,3!"];
+  e [pos="2,3!"];
+  g [pos="1,2!"];
+  h [pos="3,2!"];
+  f [pos="6,3!"];
+  i [pos="5,2!"];
+  a -- b;
+  a -- c;
+  b -- d;
+  b -- e;
+  e -- g;
+  e -- h;
+  c -- f -- i;
+}
+`, {engine: 'neato', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["html","tex"], function(html,tex){return(
+html `
+<table style="font-size:20px;">
+<tr>
+  <th>Orden</th>
+  <th>Posiciones</th>
+  <th>Resultado</th>
+<tr>
+  <td>Pre orden</td>
+  <td>${tex `raíz - izq. - der.`}</td>
+  <td>${tex `\overbrace{A}^{raíz} \; \overbrace{BDEGH}^{izq} \; \overbrace{CFI}^{der}`}</td>
+</tr>
+<tr>
+  <td>In orden</td>
+  <td>${tex `izq. - raíz - der.`}</td>
+  <td>${tex `\overbrace{DBGEH}^{izq} \; \overbrace{A}^{raíz} \; \overbrace{CIF}^{der}`}</td>
+</tr>
+<tr>
+  <td>Pos orden</td>
+  <td>${tex `izq. - der. - raíz`}</td>
+<td>${tex `\overbrace{DGHEB}^{izq} \; \overbrace{IFC}^{der} \; \overbrace{A}^{raíz}`}</td>
+</tr>
+</table>`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `<br>
+## Expresiones aritméticas
+<br>
+<ul>
+<li>Los vértices terminales son operandos (números).</li>
+<li>Los vértices internos son operandos.</li>
+<li>La raíz siempre debe ser un operador.</li>
+<li>Prioridad de operadores<br>
+${tex `(x)[x]|x|`}<br>
+${tex `\sqrt[]x \; x^y`}<br>
+${tex `\cdot /`}<br>
+${tex `\plusmn`}<br>
+</li>
+</ul>
+<br>
+
+<h3>Recorrido de expresiones aritméticas.</h3>
+
+<br>
+<ul>
+<li>
+Pre fijo: ${tex `\;\;raíz - izq. - der.`}
+</li>
+<li>
+Entre fijo: ${tex `\;\;izq. - raíz - der.`}
+</li>
+<li>
+Pos fijo: ${tex `\;\;izq - der. - raíz`}
+</li>
+</ul>
+`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+**Ejemplo**. Convertir la siguiente expresión aritmética a un recorrido de árbol en pre fijo, entre fijo y pos fijo.
+`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `[a + b] / [c \cdot (d - e)]`}`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  {rank = "."; "+";}
+  "." [label="⋅"]
+  "/" -- "+";
+  "/" -- ".";
+  "+" -- a;
+  "+" -- b;
+  "." -- c;
+  "." -- "-";
+  "-" -- "d";
+  "-" -- "e";
+}`
+, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `<ul>
+<li>
+Pre fijo:<br><br>
+<h2>${tex `\;\; \overbrace{/}^{raiz} \; \overbrace{\underbrace{+}_{raíz} \; \underbrace{a}_{izq} \; \underbrace{b}_{der}}^{izq} \; \overbrace{\underbrace{\cdot}_{raiz} \; \underbrace{c}_{izq} \; \underbrace{ \underbrace{-}_{raíz} \; \underbrace{d}_{izq} \; \underbrace{e}_{der}}_{der}}^{der}`}</h2><br><br>
+</li>
+<li>
+Entre fijo: <br><br>
+<h2>${tex `\;\; \overbrace{\underbrace{a}_{izq} \; \underbrace{+}_{raíz} \; \underbrace{b}_{der}}^{izq} \; \overbrace{/}^{raíz} \; \overbrace{ \underbrace{c}_{izq} \; \underbrace{\cdot}_{raíz} \; \underbrace{\underbrace{d}_{izq} \; \underbrace{-}_{raíz} \; \underbrace{e}_{der}}_{der}}^{der}`}</h2><br><br>
+</li>
+<li>
+Pos fijo: <br><br>
+<h2>${tex `\;\; \overbrace{\underbrace{a}_{izq} \; \underbrace{b}_{der} \; \underbrace{+}_{raíz}}^{izq} \; \overbrace{ \underbrace{c}_{izq} \; \underbrace{\underbrace{d}_{izq} \underbrace{e}_{der} \underbrace{-}_{raíz}}_{der} \; \underbrace{\cdot}_{raíz}}^{der} \; \overbrace{/}^{raíz}`}</h2>
+</li>
+</ul>`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo.** Si se tiene la expresión pos fija encuentra la gráfica.`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `\overbrace{a \; b \; c \; + \; /}^{izq} \; \overbrace{\; b \; c \; / \;}^{der} \; \overbrace{-}^{raíz}`}`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+` graph {
+{rank = "/1"; "/";}
+"/1" [label="/"];
+b1 [label="b"];
+c1 [label="c"];
+"-" -- "/";
+"-" -- "/1";
+"/" -- "a";
+"/" -- "+";
+"+" -- b;
+"+" -- c;
+"/1" -- b1;
+"/1" -- c1;
+}`, {engine: 'dot', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo**. Usando la gráfica anterior generada, obtener la expresión prefija del recorrido del árbol.`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `\overbrace{-}^{raíz} \; \overbrace{ \; / \; a \; \; + \; \; b \; c}^{izq} \; \overbrace{\; / \; b \; c}^{der}`}`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo**. Usando la gráfica anterior generada, obtener la expresión entre fija del recorrido del árbol.`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `\overbrace{a \; / \; b \; + \; c}^{izq} \; \overbrace{ - }^{raíz} \; \overbrace{ \; b \; / \; c}^{der}`}`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Ejercicios`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+**Ejercicio 1**. Determine la altura y el nivel del árbol considerando como raíz el vértice c, grafique este nuevo árbol obtenido:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+` graph {
+  c -- b;
+  b -- a;
+  b -- d;
+  d -- h;
+  d -- e;
+  d -- g;
+  h -- f;
+  h -- i;
+  i -- j;
+  j -- k;
+  j -- l;
+}
+`, {engine: 'neato', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `Rehaciendo árbol.`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+` graph {
+  c [xlabel="Nivel 0"];
+  b [xlabel="Nivel 1"];
+  d [xlabel="Nivel 2"];
+  h [xlabel="Nivel 3"];
+  i [xlabel="Nivel 4"];
+  j [xlabel="Nivel 5"];
+  k [xlabel="Nivel 6"];
+  c -- b;
+  b -- a;
+  b -- d;
+  d -- h;
+  d -- e;
+  d -- g;
+  h -- f;
+  h -- i;
+  i -- j;
+  j -- k;
+  j -- l;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `<mark>El arból con raíz en el nodo ${tex `C`}, tiene **${tex `\bf 6 \bf`} níveles** y su **altura** es de ${tex `\bf 7 \bf`}.</mark>`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>**Ejercicio 2**. Determine la altura del árbol considerando como raíz el vértice d.`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  d -- b;
+  d -- h:
+  d -- e;
+  d -- g;
+  b -- c;
+  b -- a;
+  h -- f;
+  h -- i;
+  i -- j;
+  j -- k;
+  j -- l;
+}
+`, {engine: 'neato', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `Rehaciendo árbol.`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  d [xlabel="Nivel 0"];
+  h [xlabel="Nivel 1"];
+  i [xlabel="Nivel 2"];
+  j [xlabel="Nivel 3"];
+  k [xlabel="Nivel 4"];
+  d -- b;
+  d -- h:
+  d -- e;
+  d -- g;
+  b -- c;
+  b -- a;
+  h -- f;
+  h -- i;
+  i -- j;
+  j -- k;
+  j -- l;
+}
+`, {engine: 'dot', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `<mark>El arból con raíz en el nodo ${tex `C`}, tiene **${tex `\bf 4 \bf`} níveles** y su **altura** es de ${tex `\bf 5 \bf`}.</mark>`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br> **Ejercicio 3.** ¿Cuál es el árbol de expansión mínima del siguiente árbol y cuál es el coste total?`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  h -- a [label="4"] [len=1.5] [color=red,penwidth=3.0];
+  h -- g [label="8"] [len=1.5];
+  h -- e [label="7"] [len=1.5];
+  h -- d [label="2"] [len=1.5] [color=red,penwidth=3.0];
+  h -- c [label="3"] [len=1.5];
+  a -- b [label="4"] [len=1.5] [color=red,penwidth=3.0];
+  b -- c [label="7"] [len=1.5];
+  c -- d [label="2"] [len=1.5] [color=red,penwidth=3.0];  
+  d -- e [label="5"] [len=1.5] [color=red,penwidth=3.0];
+  e -- f [label="6"] [len=1.5];  
+  f -- g [label="5"] [len=1.5] [color=red,penwidth=3.0];
+  g -- a [label="6"] [len=1.5] [color=red,penwidth=3.0];  
+}
+`
+, {engine: 'neato', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>**Ejercicio 4.** Cuál es el recorrido del siguiente árbol en pre orden, in orden y pos orden:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  b -- d;
+  b -- e;
+  e -- h;
+  e -- i;
+}
+`, {engine: 'dot', useWorker: false, zoom: false}  )
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `
+<ul>
+<li>
+Pre orden: <br><br>
+<h2>${tex `\overbrace{b}^{raíz} \; \overbrace{d}^{izq} \; \overbrace{\underbrace{e}_{raíz} \; \underbrace{h}_{izq} \; \underbrace{i}_{der}}^{der}`}</h2>
+</li>
+<li>
+In orden: <br><br>
+<h2>${tex `\overbrace{d}^{izq} \; \overbrace{b}^{raíz} \; \overbrace{\underbrace{h}_{izq} \; \underbrace{e}_{raíz} \; \underbrace{i}_{der}}^{der}`}</h2>
+</li>
+<li>
+Pos orden: <br><br>
+<h2>${tex `\overbrace{d}^{izq} \; \overbrace{\underbrace{h}_{izq} \; \underbrace{i}_{der} \; \underbrace{e}_{raíz}}^{der} \; \overbrace{b}^{raíz}`}</h2>
+</li>
+</ul>
+`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>**Ejercicio 5.** Cuál es el recorrido del siguiente árbol en preorden, inorden y pos orden:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  a -- b;
+  b -- d;
+  b -- e;
+  e -- h;
+  e -- i;
+  a -- c;
+  c -- f;
+  c -- g;
+}
+`, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `
+<ul>
+<li>
+Pre orden: <br><br>
+<h2>${tex `\overbrace{a}^{raiz} \; \overbrace{b \; d \; e \; h \; i}^{izq} \; \overbrace{c \; f \; g}^{der}`}</h2>
+</li>
+<li>
+In orden: <br><br>
+<h2>${tex `\overbrace{d \; b \; h \; e \; i}^{izq} \; \overbrace{a}^{raíz} \; \overbrace{f \; c \; g}^{der}`}</h2>
+</li>
+<li>
+Pos orden: <br><br>
+<h2>${tex `\overbrace{d \; h \; i \; e \; b}^{izq} \; \overbrace{f \; g \; c}^{der} \; \overbrace{a}^{raíz}`}</h2>
+</li>
+</ul>
+`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>**Ejercicio 6.** Grafique el árbol obtenido de la siguiente expresión teniendo en cuenta que fue escrita en POSFIJA Y su forma prefija y entre fija:`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `Posfija: \; a \; b \; c \; \cdot \; /`}`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  {rank= "."; "a";}
+  "." [label="⋅"]
+  "." -- b;
+  "." -- c;
+  "/" -- a;
+  "/" -- ".";
+}`, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejercicio 7**. Grafique la siguiente expresión aritmética a través de un árbol:`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `## ${tex `(x \cdot y 	\text{\textasciicircum} 2) + (b \cdot (x + c)) \; x`}`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  {rank= "."; "+"; }
+  
+  "." [label="⋅"];
+  ".1" [label="⋅"];
+  ".2" [label="⋅"];
+  "x1" [label="x"];
+  "x2" [label="x"];
+  "+1" [label="+"];  
+  
+  "+" -- ".2";
+  "+" -- ".";
+  "." -- x;
+  "." -- "^";
+  "^" -- "y";
+  "^" -- "2";
+  ".2" -- ".1";
+  ".2" -- x2;  
+  ".1" -- b;
+  ".1" -- "+1";
+  "+1" -- c;
+  "+1" -- x1;
+  
+}`, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejercicio 8.** ¿Cuál es la expresión matemática del siguiente árbol?`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {  
+  "-" -- "/";
+  "-" -- "/2";
+  "/" -- x;
+  "/" -- "+";
+  "+" -- a;
+  "+" -- b;
+  "/2" -- b2;
+  "/2" -- c;  
+  b2 [label="b"];
+  "/2" [label="/"];  
+}`, {engine: 'dot', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `# <mark>${tex `(x/(a+b))-(b/c) = \frac{x}{(a + b)} - \frac{b}{c}`} </mark>`
+)});
+  main.variable(observer("algorithms")).define("algorithms", ["md"], function(md){return(
+md `---
+# Algoritmos`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Algoritmo de prim`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`digraph {
+  node [shape="box"];
+  a [label="Inicio"] [shape="ellipse"];
+  b [label=<Selecciona un <b>vértice</b>>];
+  c [label=<Selecciona la <b>arista</b>&nbsp; de menor peso conectada al vértice seleccionado>];
+  d [label=<En cada iteración selecciona la <b>arista</b>&nbsp;&nbsp;de <b>menor peso</b>&nbsp; relacionada con los vértices conectados>];
+  e [label=<El algoritmo finaliza cuando todos los vertices están conectados n-1 aristas>];
+  f [label=<Fin>] [shape="ellipse"];
+  a -> b -> c -> d -> e -> f;
+}`
+, {engine: 'dot', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo.**`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  a -- b [label=4] [len=1.8] [color=red,penwidth=3.0];
+  b -- c [label=3] [len=1.8] [color=red,penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color=red,penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8] [color=red,penwidth=3.0];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8] [color=red,penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- f [label=2] [len=1.8] [color=red,penwidth=3.0];
+  e -- b [label=7] [len=1.8];
+  e -- h [label=2] [len=1.8] [color=red,penwidth=3.0];
+  e -- d [label=5] [len=1.8] [color=red,penwidth=3.0];
+  
+}`, {engine: 'neato', zoom: false, useWorker: false})
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `Coste total de ${tex `${2 + 2 + 5 + 4 + 4 + 3 + 1 + 6}`} vértices.`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Algoritmo de Dijkstra
+`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`digraph {
+  node [shape="box"];
+  a [label="Inicio"] [shape="ellipse"];
+  b [label=<Asignar para cada nodo no visitado <b>infinito</b>>];
+  c [label="Mantener un registro de los nodos visitados"];
+  d [label="Calcular distancias a cada nuevo nodo sumando la distancia anterior"];
+  e [label="Si la distancia nueva calculada es menor que la anterior, reemplazarla, sino ignorarlo"];
+  f [label="El algoritmo finaliza cuando se llega al nodo final"];
+  g [label="Fin"] [shape="ellipse"];
+  a -> b -> c -> d -> e -> f -> g;
+}
+`
+, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo.**`
+)});
+  main.variable(observer()).define(["adot","dots_graph__6__1","iterator__6_1"], function(adot,dots_graph__6__1,iterator__6_1){return(
+adot.bind(this)`${dots_graph__6__1[iterator__6_1]}${{engine: 'neato', zoom: false, useWorker: false }}`
+)});
+  main.variable(observer("viewof play__6_1")).define("viewof play__6_1", ["button"], function(button){return(
+button({value: "Reproducir animación"})
+)});
+  main.variable(observer("play__6_1")).define("play__6_1", ["Generators", "viewof play__6_1"], (G, _) => G.input(_));
+  main.variable(observer("iterator__6_1")).define("iterator__6_1", ["adot_iterator","dots_graph__6__1","durations","play__6_1","pass__6_1"], function(adot_iterator,dots_graph__6__1,durations,play__6_1,pass__6_1){return(
+adot_iterator(dots_graph__6__1.length, false, durations, play__6_1, pass__6_1)
+)});
+  main.variable(observer()).define(["dots_graph__6__1"], function(dots_graph__6__1){return(
+dots_graph__6__1.length
+)});
+  main.variable(observer("durations")).define("durations", function(){return(
+[1000,1000,1000,1000,1000,1000,10000,10000,5000,10000,10000,10000,10000,10000,10000]
+)});
+  main.variable(observer("pass__6_1")).define("pass__6_1", function(){return(
+Object.create({enable: false})
+)});
+  main.variable(observer("dots_graph__6__1")).define("dots_graph__6__1", ["colors"], function(colors){return(
+[
+  `graph {  
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  c [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  d [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  e [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,   `graph {
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  d [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  e [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.blue_light}" , penwidth=3.0];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,  `graph {
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  e [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8] [color="${colors.blue_light}",penwidth=3.0];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8] [color="${colors.blue_light}",penwidth=3.0];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="(3 + 6 = 9) > 4. Elegir otro ruta";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="3 + 11 = 14 < ∞. Ruta momentaria";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>14</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  c -- d [label=11] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}` ,`graph {
+  label="(3 + 8 = 11) > 7. Ruta descartada";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>14</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8];
+  b -- d [label=5] [len=1.8];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="(4 + 5 = 9) < 14. Ruta favorable";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>14</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="d = 9. Actualizando ruta";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>9</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="(7 + 2 = 9) = (4 + 5 = 9) ";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>9</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8];
+  e -- a [label=7] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="(7 + 5 = 12) <  ∞. Ruta momentarea";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>9</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td>&#8734;</td></tr></table>>];
+  g [xlabel=<<table><tr><td><b>12</b></td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  e -- a [label=7] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="(7 + 5 + 3 = 15) <  ∞. Ruta momentarea";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>9</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td><b>15</b></td></tr></table>>];
+  g [xlabel=<<table><tr><td><b>12</b></td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  g -- e [label=5] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  e -- a [label=7] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];  
+}`,`graph {
+  label="(7 + 5 + 10 = 22) >  9. Ruta descartada";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>9</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td><b>15</b></td></tr></table>>];
+  g [xlabel=<<table><tr><td><b>12</b></td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  e -- a [label=7] [len=1.8] [color="${colors.skin}",penwidth=3.0];
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8][color="${colors.skin}",penwidth=3.0];
+}`,`graph {
+  label="(4 + 5 + 2 = 11) <  15. Ruta optima";
+  a [xlabel=<<table><tr><td><b>0</b></td></tr></table>>];
+  b [xlabel=<<table><tr><td><b>4</b></td></tr></table>>];
+  c [xlabel=<<table><tr><td><b>3</b></td></tr></table>>];
+  d [xlabel=<<table><tr><td><b>9</b></td></tr></table>>];
+  e [xlabel=<<table><tr><td><b>7</b></td></tr></table>>];
+  f [xlabel=<<table><tr><td><b>11</b></td></tr></table>>];
+  g [xlabel=<<table><tr><td><b>12</b></td></tr></table>>];
+  a -- b [label=4] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  d -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- g [label=3] [len=1.8];
+  g -- e [label=5] [len=1.8] ;
+  e -- a [label=7] [len=1.8] ;
+  a -- c [label=3] [len=1.8];
+  c -- d [label=11] [len=1.8];
+  b -- c [label=6] [len=1.8];
+  c -- e [label=8] [len=1.8];
+  d -- e [label=2] [len=1.8];
+  d -- g [label=10] [len=1.8];
+}`
+  
+]
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Algoritmo de Kruskal
+`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`digraph {
+  node [shape="box"];
+  a [label="Inicio"] [shape="ellipse"];
+  b [label="Selecciona arista menor"];
+  c [label="En cada iteración agregue la arista de menor longitud del conjunto de arcos disponibles"];
+  d [label="El algoritmo finaliza cuando todos los vertices están conectados n-1 arcos"];
+  e [label="Si la distancia nueva calculada es menor que la anterior, reemplazarla, sino ignorarlo"];  
+  f [label="Fin"] [shape="ellipse"];
+  a -> b -> c -> d -> e -> f;
+}
+`
+, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo.**`
+)});
+  main.variable(observer()).define(["adot","dots_graph__6_2","iterator__6_2"], function(adot,dots_graph__6_2,iterator__6_2){return(
+adot.bind(this)`${dots_graph__6_2[iterator__6_2]}${{engine: 'neato', zoom: false, useWorker: false }}`
+)});
+  main.variable(observer("viewof play__6_2")).define("viewof play__6_2", ["button"], function(button){return(
+button({value: "Reproducir animación"})
+)});
+  main.variable(observer("play__6_2")).define("play__6_2", ["Generators", "viewof play__6_2"], (G, _) => G.input(_));
+  main.variable(observer("iterator__6_2")).define("iterator__6_2", ["adot_iterator","dots_graph__6_2","play__6_2","pass__6_2"], function(adot_iterator,dots_graph__6_2,play__6_2,pass__6_2){return(
+adot_iterator(dots_graph__6_2.length, false, undefined, play__6_2, pass__6_2)
+)});
+  main.variable(observer("pass__6_2")).define("pass__6_2", function(){return(
+Object.create({enable: false})
+)});
+  main.variable(observer("dots_graph__6_2")).define("dots_graph__6_2", ["colors"], function(colors){return(
+[
+`graph {
+  a -- b [label=4] [len=1.8];
+  b -- c [label=3] [len=1.8];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8];
+  e -- d [label=5] [len=1.8];
+}`,`graph {
+  a -- b [label=4] [len=1.8];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8];
+  e -- d [label=5] [len=1.8];
+}`,`graph {
+  a -- b [label=4] [len=1.8];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8];
+  e -- d [label=5] [len=1.8];
+}`,`graph {
+  a -- b [label=4] [len=1.8];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- d [label=5] [len=1.8];
+}`,`graph {
+  a -- b [label=4] [len=1.8];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- d [label=5] [len=1.8];
+}`,`graph {
+  a -- b [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- d [label=5] [len=1.8];
+}`,`graph {
+  a -- b [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+}`,`graph {
+  a -- b [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  b -- c [label=3] [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- f [label=5] [len=1.8];
+  f -- i [label=1] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  i -- h [label=5] [len=1.8];
+  h -- g [label=6] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- d [label=8] [len=1.8];
+  d -- a [label=6] [len=1.8];
+  e -- a [label=4] [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- b [label=7] [len=1.8];
+  e -- f [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- i [label=4] [len=1.8];
+  e -- h [label=2] [len=1.8] [color="${colors.red}",penwidth=3.0];
+  e -- d [label=5] [len=1.8] [color="${colors.red}",penwidth=3.0];
+}`
+]
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Algoritmo de Fleury
+`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`digraph {
+  node [shape="box"];
+  a [label="Inicio"] [shape="ellipse"];
+  b [label="Verificar Grado de mi gráfico"];
+  c [label="Realizar un circuito cerrado"];
+  d [label="En cada iteración construye un nuevo camino cerrado visitando aristas incidentes que no han sido visitados"];
+  e [label="Reemplaza cada nuevo circuito en el inicial hasta visitar todas las aristas"];  
+  f [label="Fin"] [shape="ellipse"];
+  a -> b -> c -> d -> e -> f;
+}
+`
+, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo.**`
+)});
+  main.variable(observer()).define(["adot","dots_graph__6_3","iterator__6_3"], function(adot,dots_graph__6_3,iterator__6_3){return(
+adot.bind(this)`${dots_graph__6_3[iterator__6_3]}${{engine: 'neato', zoom: false, useWorker: false }}`
+)});
+  main.variable(observer("viewof play__6_3")).define("viewof play__6_3", ["button"], function(button){return(
+button({value: "Reproducir animación"})
+)});
+  main.variable(observer("play__6_3")).define("play__6_3", ["Generators", "viewof play__6_3"], (G, _) => G.input(_));
+  main.variable(observer("iterator__6_3")).define("iterator__6_3", ["adot_iterator","dots_graph__6_3","durations__6_3","play__6_3","pass__6_3"], function(adot_iterator,dots_graph__6_3,durations__6_3,play__6_3,pass__6_3){return(
+adot_iterator(dots_graph__6_3.length, false, durations__6_3, play__6_3, pass__6_3)
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex)
+{
+  const ciclo1 = "\\textit{\\colorbox{red}{\\textcolor{white}{afgba}}}"
+  const ciclo2 = "\\textit{\\colorbox{green}{\\textcolor{white}{gecg}}}"
+  const ciclo3 = "\\textit{\\colorbox{blue}{\\textcolor{white}{fedcbf}}}"
+  const ciclo1_2 = `\\textit{\\colorbox{red}{\\textcolor{white}{af}}${ciclo2}\\colorbox{red}{\\textcolor{white}{ba}}}`
+  const ciclo1_2_3 = `\\textit{\\colorbox{red}{\\textcolor{white}{a}}${ciclo3}${ciclo2}\\colorbox{red}{\\textcolor{white}{ba}}}`
+  return  md `
+## ${tex `Ciclo\;1 = ${ciclo1}`}
+## ${tex `Ciclo\;2 = ${ciclo2}`}
+## ${tex `Ciclo\;3 = ${ciclo3}`}
+<br>
+Se sustituye en ${tex `\bf g \bf`} del **ciclo 1**, con el **ciclo 2** y se deja lo demás igual.
+# ${tex `\underbrace{${ciclo1} + ${ciclo2}}_{${ciclo1_2}}`}
+<br>
+Se sustituye en ${tex `\bf f \bf`} la combinación del **ciclo 1** + **ciclo 2**, con el **ciclo 3** y se deja lo demás igual.
+# ${tex `\underbrace{${ciclo1_2}+${ciclo3}}_{${ciclo1_2_3}}`}
+<br>
+# ${tex `${ciclo1_2_3} = Ciclo\;Euleriano`}
+`
+}
+);
+  main.variable(observer()).define(["md"], function(md){return(
+md `<mark>El grado de todos los vértices son **pares**, por ende puede haber un **ciclo euleriano**.</mark>`
+)});
+  main.variable(observer()).define(["dots_graph__6_3"], function(dots_graph__6_3){return(
+dots_graph__6_3.length
+)});
+  main.variable(observer("durations__6_3")).define("durations__6_3", function(){return(
+[1000,5000,5000,5000]
+)});
+  main.variable(observer("pass__6_3")).define("pass__6_3", function(){return(
+Object.create({enable: false})
+)});
+  main.variable(observer("dots_graph__6_3")).define("dots_graph__6_3", ["colors"], function(colors){return(
+[
+`graph {
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8];
+  e -- f [len=1.8];
+  f -- a [len=1.8];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph {
+  label="Ciclo 1 afgba"
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8];
+  e -- f [len=1.8];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph {
+  label="Ciclo 2 gecg"
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8];
+  e -- f [len=1.8];
+  f -- a [len=1.8];
+  b -- f [len=1.8];
+  c -- e [len=1.8][color="${colors.green}",penwidth=3.0];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8] [color="${colors.green}",penwidth=3.0];
+  g -- c [len=1.8][color="${colors.green}",penwidth=3.0];
+}`,`graph {
+  label="Ciclo 3 fedcbf"
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.blue}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.blue}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.blue}",penwidth=3.0];
+  e -- f [len=1.8][color="${colors.blue}",penwidth=3.0];
+  f -- a [len=1.8];
+  b -- f [len=1.8][color="${colors.blue}",penwidth=3.0];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,  // afedcbfgecgba
+`graph { label="";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8];
+  e -- f [len=1.8];
+  f -- a [len=1.8];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8];
+  e -- f [len=1.8];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c -> b";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8];
+  g -- f [len=1.8];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f -> g";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8];
+  g -- e [len=1.8];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f -> g -> e";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8];
+  g -- e [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f -> g -> e -> c";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8];
+  g -- e [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- c [len=1.8];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f -> g -> e -> c -> g";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8];
+  g -- e [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- c [len=1.8] [color="${colors.red}",penwidth=3.0];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f -> g -> e -> c -> g -> b";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- e [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- c [len=1.8] [color="${colors.red}",penwidth=3.0];
+}`,`graph { label="a -> f -> e -> d -> c -> b -> f -> g -> e -> c -> g -> b -> a";
+  a [xlabel=2];
+  b [xlabel=4];
+  f [xlabel=4];
+  g [xlabel=4];
+  e [xlabel=4];
+  c [xlabel=4];
+  d [xlabel=2];
+  a -- b [len=1.8][color="${colors.red}",penwidth=3.0];
+  b -- c [len=1.8][color="${colors.red}",penwidth=3.0];
+  c -- d [len=1.8][color="${colors.red}",penwidth=3.0];
+  d -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  e -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  f -- a [len=1.8] [color="${colors.red}",penwidth=3.0];
+  b -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  c -- e [len=1.8][color="${colors.red}",penwidth=3.0];
+  g -- f [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- b [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- e [len=1.8] [color="${colors.red}",penwidth=3.0];
+  g -- c [len=1.8] [color="${colors.red}",penwidth=3.0];
+}`]
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Algoritmo de flujo máximo`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`digraph {
+  node [shape="box"];
+  a [label="Inicio"] [shape="ellipse"];
+  b [label="Direccionar flujos e iniciar en ceros"];
+  c [label="Obtener trayectorias buscando siempre el mayor flujo"];
+  d [label="Escoger el menor flujo de la trayectoria"];
+  e [label="Actualizar el gráfico con las capacidades mínimas"];  
+  f [label="Buscar nueva trayectoria en aumento y repetir hasta que no existan más"];
+  g [label="Fin"] [shape="ellipse"];
+  a -> b -> c -> d -> e -> f -> g;
+}
+`
+, {engine: 'dot', useWorker: false, zoom: false})
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejemplo.**`
+)});
+  main.variable(observer()).define(["adot","dots_graph__6_4","iterator__6_4"], function(adot,dots_graph__6_4,iterator__6_4){return(
+adot.bind(this)`${dots_graph__6_4[iterator__6_4]}${{engine: 'neato', zoom: false, useWorker: false }}`
+)});
+  main.variable(observer("viewof play__6_4")).define("viewof play__6_4", ["button"], function(button){return(
+button({value: "Reproducir animación"})
+)});
+  main.variable(observer("play__6_4")).define("play__6_4", ["Generators", "viewof play__6_4"], (G, _) => G.input(_));
+  main.variable(observer("iterator__6_4")).define("iterator__6_4", ["adot_iterator","dots_graph__6_4","durations__6_4","play__6_4","pass__6_4"], function(adot_iterator,dots_graph__6_4,durations__6_4,play__6_4,pass__6_4){return(
+adot_iterator(dots_graph__6_4.length, false, durations__6_4, play__6_4, pass__6_4)
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<mark>Se requiere de los nodos **f** y **e**, ya que son las **únicas maneras** para llegar a **e**.</mark>`
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `
+## <mark>${tex `Camino \; 1 \; \bold{acfg} , \; puede \; enviar \; \bold{4 \; unidades}.`}</mark>
+## <mark>${tex `Camino \; 2 \; \bold{abfg} , \; puede \; enviar \; \bold{3 \; unidades}.`}</mark>
+## <mark>${tex `Camino \; 3 \; \bold{adeg} , \; puede \; enviar \; \bold{4 \; unidades}.`}</mark>
+## <mark>${tex `Camino \; 4 \; \bold{aceg} , \; puede \; enviar \; \bold{2 \; unidades}.`}</mark>
+`
+)});
+  main.variable(observer()).define(["html"], function(html){return(
+html `<br><iframe width="560" height="315" src="https://www.youtube.com/embed/qnpJmwLURYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+)});
+  main.variable(observer("durations__6_4")).define("durations__6_4", function(){return(
+[2500,5000,5000,10000,5000,5000,10000,5000,5000,10000,5000,5000,10000,5000]
+)});
+  main.variable(observer("pass__6_4")).define("pass__6_4", function(){return(
+Object.create({enable: false})
+)});
+  main.variable(observer("dots_graph__6_4")).define("dots_graph__6_4", ["colors"], function(colors)
+{
+const label = (_str,_bgcolor = colors.white,_font_color = colors.black) => 
+  `<<table><tr><td><font color="${_font_color}"><b>${_str}</b></font></td></tr></table>>`
+const red_select = `[color="${colors.red}",penwidth=3.0]`
+const blue_light_select = `[color="${colors.blue_light}",penwidth=3.0]`
+const skin_select = `[color="${colors.skin}",penwidth=3.0]`
+const green_select = `[color="${colors.green}",penwidth=3.0]`
+const black = colors.black
+const white = colors.white
+return [
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  g [xlabel=${label('0')}]
+  a -> b [taillabel=6] ;
+  a -> c [taillabel=7] ;
+  a -> d [taillabel=4] ;
+  b -> c [taillabel=1] ;
+  b -> f [taillabel=3] ;
+  c -> d [taillabel=2] ;
+  c -> f [taillabel=4] ;
+  c -> e [taillabel=6] ;
+  d -> e [taillabel=7] ;
+  e -> g [taillabel=6] ;
+  f -> g [taillabel=9] ;
+}`,
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Agregando ceros al final";
+  g [xlabel=${label('0')}];
+  a -> b [taillabel=6] [headlabel=0] ;
+  a -> c [taillabel=7] [headlabel=0] ;
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=3] [headlabel=0] ;
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=4] [headlabel=0] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [taillabel=9] [headlabel=0] ;
+}`,
+// La unidad mínima es 4, en el camino 1 (a -> c -> f -> g)
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="La unidad mínima es 4, en el camino 1 (a -> c -> f -> g)";
+  g [xlabel=${label('0')}];
+  a -> b [taillabel=6] [headlabel=0];
+  a -> c [taillabel=7] [headlabel=0] ${blue_light_select};
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=3] [headlabel=0] ;
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [label=" "] [taillabel=${label("4")}] [headlabel=0] ${green_select};
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [taillabel=9] [headlabel=0] ${blue_light_select};
+}`,
+// Camino 1 (a -> c -> f -> g) se puede enviar 4 unidades
+`digraph {
+  edge [len=2.6] [labeldistance=3.4];
+  label="Camino 1 (a -> c -> f -> g) se puede enviar 4 unidades";
+  g [xlabel=${label('0+4=4')}];
+  a -> b [taillabel=6] [headlabel=0];
+  a -> c [label=" "] [taillabel=${label("7-3=4")}] [headlabel=${label("0+4=4")}] ${red_select};
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=3] [headlabel=0] ;
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [label=" "] [taillabel=${label("4-4=0")}] [headlabel=${label("0+4=4")}] ${red_select};
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [label=" "] [taillabel=${label("9-4=5")}] [headlabel=${label("0+4=4")}] ${red_select} ;
+}`,
+// Actualizando datos
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Actualizando datos";
+  g [xlabel=${label('4')}];
+  a -> b [taillabel=6] [headlabel=0] ;
+  a -> c [label=" "] [taillabel=${label('4')}] [headlabel=${label('4')}] ${skin_select};
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=3] [headlabel=0] ;
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [label=" "] [taillabel=${label('0')}] [headlabel=${label(4)}] ${skin_select};
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [label=" "] [taillabel=${label('5')}] [headlabel=${label('4')}] ${skin_select};
+}`,
+// La unidad mínima es 3, en el camino 2 (a -> b -> f -> g)
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="La unidad mínima es 3, en el camino 2 (a -> b -> f -> g)";
+  g [xlabel=${label('4')}];
+  a -> b [taillabel=6] [headlabel=0] ${blue_light_select};
+  a -> c [taillabel=4] [headlabel=4];
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [label=" "][taillabel=${label('3')}] [headlabel=0] ${green_select};
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [taillabel=5] [headlabel=4] ${blue_light_select};
+}`,
+// Camino 2 (a -> b -> f -> g) se puede enviar 3 unidades
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Camino 2 (a -> b -> f -> g) se puede enviar 3 unidades";
+  g [xlabel=${label('3+4=7')}];
+  a -> b [label=" "] [taillabel=${label('6-3=3')}] [headlabel=${label('3+0=3')}] ${red_select};
+  a -> c [taillabel=4] [headlabel=4];
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [label=" "] [taillabel=${label('3-3=0')}] [headlabel=${label('0+3=3')}] ${red_select};
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [label=" "] [taillabel=${label('5-3=2')}] [headlabel=${label('4+3=7')}] ${red_select};
+}`,
+// Actualizando datos
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Actualizando datos";
+  g [xlabel=${label('7')}];
+  a -> b [label=" "] [taillabel=${label('3')}] [headlabel=${label('3')}] ${skin_select};
+  a -> c [taillabel=4] [headlabel=4];
+  a -> d [taillabel=4] [headlabel=0] ;
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [label=" "] [taillabel=${label('0')}] [headlabel=${label('3')}] ${skin_select};
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ;
+  e -> g [taillabel=6] [headlabel=0] ;
+  f -> g [label=" "] [taillabel=${label('2')}] [headlabel=${label('7')}] ${skin_select};
+}`,
+// La unidad mínima es 4, en el camino 3 (a -> d -> e -> g)
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="La unidad mínima es 4, en el camino 3 (a -> d -> e -> g)";
+  g [xlabel=${label('7')}];
+  a -> b [taillabel=3] [headlabel=3];
+  a -> c [taillabel=4] [headlabel=4];
+  a -> d [label=" "] [taillabel=${label('4')}] [headlabel=0] ${green_select};
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=0] [headlabel=3];
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [taillabel=7] [headlabel=0] ${blue_light_select};
+  e -> g [taillabel=6] [headlabel=0] ${blue_light_select};
+  f -> g [taillabel=2] [headlabel=7];
+}`
+,
+// Camino 3 (a -> d -> e -> g) se puede enviar 4 unidades
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Camino 3 (a -> d -> e -> g) se puede enviar 4 unidades";
+  g [xlabel=${label('4+7=11')}];
+  a -> b [taillabel=3] [headlabel=3];
+  a -> c [taillabel=4] [headlabel=4];
+  a -> d [label=" "] [taillabel=${label('4-4=0')}] [headlabel=${label('0+4=4')}] ${red_select};
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=0] [headlabel=3];
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [label=" "] [taillabel=${label('7-4=0')}] [headlabel=${label('0+4=4')}] ${red_select};
+  e -> g [label=" "] [taillabel=${label('6-4=2')}] [headlabel=${label('0+4=4')}] ${red_select};
+  f -> g [taillabel=2] [headlabel=7];
+}`,
+// Actualizando datos
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Actualizando datos";
+  g [xlabel=${label('11')}];
+  a -> b [taillabel=3] [headlabel=3];
+  a -> c [taillabel=4] [headlabel=4];
+  a -> d [label=" "] [taillabel=${label('0')}] [headlabel=${label('4')}] ${skin_select};
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=0] [headlabel=3];
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ;
+  d -> e [label=" "] [taillabel=${label('0')}] [headlabel=${label('4')}] ${skin_select};
+  e -> g [label=" "] [taillabel=${label('2')}] [headlabel=${label('4')}] ${skin_select};
+  f -> g [taillabel=2] [headlabel=7];
+}`,
+// La unidad mínima es 2, en el camino 4 (a -> c -> e -> g)
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="La unidad mínima es 2, en el camino 4 (a -> c -> e -> g)";
+  g [xlabel=${label('11')}];
+  a -> b [taillabel=3] [headlabel=3];
+  a -> c [taillabel=4] [headlabel=4] ${blue_light_select};
+  a -> d [taillabel=0] [headlabel=4];
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=0] [headlabel=3];
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [taillabel=6] [headlabel=0] ${blue_light_select};
+  d -> e [taillabel=0] [headlabel=4];
+  e -> g [label=" "] [taillabel=${label('2')}] [headlabel=4] ${green_select};
+  f -> g [taillabel=2] [headlabel=7];
+}`,
+// Camino 4 (a -> c -> e -> g) se puede enviar 2 unidades
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Camino 4 (a -> c -> e -> g) se puede enviar 2 unidades";
+  g [xlabel=${label('2+11=13')}];
+  a -> b [taillabel=3] [headlabel=3];
+  a -> c [label=" "] [taillabel=${label('4-2=2')}] [headlabel=${label('2+4=6')}] ${red_select};
+  a -> d [taillabel=0] [headlabel=4];
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=0] [headlabel=3];
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [label=" "] [taillabel=${label('6-2=4')}] [headlabel=${label('2+0=2')}] ${red_select};
+  d -> e [taillabel=0] [headlabel=4];
+  e -> g [label=" "] [taillabel=${label('2-2=0')}] [headlabel=${label('2+4=6')}] ${red_select};
+  f -> g [taillabel=2] [headlabel=7];
+}`,
+// Actualizando datos 
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Actualizando datos";
+  g [xlabel=${label('13')}];
+  a -> b [taillabel=3] [headlabel=3];
+  a -> c [label=" "] [taillabel=${label('2')}] [headlabel=${label('6')}] ${skin_select};
+  a -> d [taillabel=0] [headlabel=4];
+  b -> c [taillabel=1] [headlabel=0] ;
+  b -> f [taillabel=0] [headlabel=3];
+  c -> d [taillabel=2] [headlabel=0] ;
+  c -> f [taillabel=0] [headlabel=4] ;
+  c -> e [label=" "] [taillabel=${label('4')}] [headlabel=${label('2')}] ${skin_select};
+  d -> e [taillabel=0] [headlabel=4];
+  e -> g [label=" "] [taillabel=${label('0')}] [headlabel=${label('6')}] ${skin_select};
+  f -> g [taillabel=2] [headlabel=7];
+}`,
+// Final
+`digraph {  
+  edge [len=2.6] [labeldistance=3.4];
+  label="Final";
+  g [xlabel=${label('13')}];
+  a -> b [label=" "] [headlabel=${label('3')}];
+  a -> c [label=" "] [headlabel=${label('6')}];
+  a -> d [label=" "] [headlabel=${label('4')}];
+  b -> c [label=" "] [headlabel=${label('0')}];
+  b -> f [label=" "] [headlabel=${label('3')}];
+  c -> d [label=" "] [headlabel=${label('0')}];
+  c -> f [label=" "] [headlabel=${label('4')}];
+  c -> e [label=" "] [headlabel=${label('2')}];
+  d -> e [label=" "] [headlabel=${label('4')}];
+  e -> g [label=" "] [headlabel=${label('6')}];
+  f -> g [label=" "] [headlabel=${label('7')}];
+}`
+]
+}
+);
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+## Ejercicios
+`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejercicio 1.** Encuentre el árbol de expansión mínima y su coste total utilizando el algoritmo de Prim:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  edge [len=1.8]
+  a -- b [label=3] [color=red penwidth=3.0];
+  b -- c [label=8];  
+  c -- d [label=2] [color=red penwidth=3.0];
+  d -- e [label=5];
+  e -- f [label=2] [color=red penwidth=3.0];
+  f -- g [label=4] [color=red penwidth=3.0];
+  g -- a [label=6];
+  b -- g [label=5];
+  b -- d [label=3] [color=red penwidth=3.0];
+  g -- d [label=7];
+  d -- f [label=4] [color=red penwidth=3.0];
+}
+`, undefined)
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {  
+  a -- b [label=3];  
+  c -- d [label=2];  
+  e -- f [label=2];
+  f -- g [label=4];  
+  b -- d [label=3];  
+  d -- f [label=4];
+}`, undefined)
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex){return(
+md `<mark>Coste total ${tex `${3+3+2+4+4+2}`}.</mark>`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+**Ejercicio 2.** Encuentre el camino de menor coste para ir desde **a** hasta **e** utilizando el algoritmo de Dijkstra. ¿Cuál es el coste?.
+`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  edge [len=1.8];
+  a -- b [label=3];
+  b -- c [label=8];
+  c -- d [label=2];
+  d -- e [label=5];
+  e -- f [label=2];
+  f -- g [label=4];
+  g -- a [label=6];
+  b -- g [label=5];
+  b -- d [label=3];
+  g -- d [label=7];
+  d -- f [label=4];
+}
+` 
+,undefined)
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  edge [len=1.8];
+  a -- b [label=3];
+  b -- c [label=8];
+  c -- d [label=2];
+  d -- e [label=5];
+  e -- f [label=2] [color=red penwidth=3.0];
+  f -- g [label=4] [color=red penwidth=3.0];
+  g -- a [label=6] [color=red penwidth=3.0];
+  b -- g [label=5];
+  b -- d [label=3];
+  g -- d [label=7];
+  d -- f [label=4];
+}
+` 
+,undefined)
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejercicio 3**. Encuentre el árbol de expansión mínima utilizando el algoritmo de kruskal:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  edge [len=1.8];
+  a -- b [label=6];
+  b -- c [label=8];
+  c -- d [label=5];
+  d -- f [label=7];
+  f -- e [label=8];
+  e -- a [label=7];
+  b -- e [label=9];
+  b -- d [label=5];
+  e -- d [label=4];
+}
+`,undefined)
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  edge [len=1.8];
+  a -- b [label=6] [color=red penwidth=3.0];
+  b -- c [label=8];
+  c -- d [label=5] [color=red penwidth=3.0];
+  d -- f [label=7] [color=red penwidth=3.0];
+  f -- e [label=8];
+  e -- a [label=7];
+  b -- e [label=9];
+  b -- d [label=5] [color=red penwidth=3.0];
+  e -- d [label=4] [color=red penwidth=3.0];
+}
+`,undefined)
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `**Ejercicio 4**. Encuentre un camino de Euler utilizando el algoritmo de Fleury:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`graph {
+  edge [len=1.5];
+  a -- b;
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a;
+  a -- e;
+  c -- f;
+  e -- f;
+  c -- a;
+}
+`
+, undefined)
+)});
+  main.variable(observer()).define(["adot","dots_graph__7_1","iterator__7_1"], function(adot,dots_graph__7_1,iterator__7_1){return(
+adot.bind(this)`${dots_graph__7_1[iterator__7_1]}${{engine: 'neato', zoom: false, useWorker: false }}`
+)});
+  main.variable(observer("viewof play__7_1")).define("viewof play__7_1", ["button"], function(button){return(
+button({value: "Reproducir animación"})
+)});
+  main.variable(observer("play__7_1")).define("play__7_1", ["Generators", "viewof play__7_1"], (G, _) => G.input(_));
+  main.variable(observer("iterator__7_1")).define("iterator__7_1", ["adot_iterator","dots_graph__7_1","play__7_1","pass__7_1"], function(adot_iterator,dots_graph__7_1,play__7_1,pass__7_1){return(
+adot_iterator(dots_graph__7_1.length, false, undefined, play__7_1, pass__7_1)
+)});
+  main.variable(observer()).define(["md","tex"], function(md,tex)
+{
+  const c1 = 'eabcdfe'
+  const c2 = 'acfa'
+  const ciclo1 = `\\textit{\\colorbox{red}{\\textcolor{white}{${c1}}}}`
+  const ciclo2 = `\\textit{\\colorbox{green}{\\textcolor{white}{${c2}}}}`
+  const ciclo1_2 = `\\textit{\\colorbox{red}{\\textcolor{white}{e}}${ciclo2}\\colorbox{red}{\\textcolor{white}{${c1.substring(2)}}}}`  
+  return  md `
+## ${tex `Ciclo\;1 = ${ciclo1}`}
+## ${tex `Ciclo\;2 = ${ciclo2}`}
+## ${tex `Ciclo\;1 + Ciclo\;2 = ${ciclo1_2}`}
+`
+}
+);
+  main.variable(observer("pass__7_1")).define("pass__7_1", function(){return(
+Object.create({enable: false})
+)});
+  main.variable(observer("dots_graph__7_1")).define("dots_graph__7_1", function()
+{
+const red_selector = `[color=red penwidth=3.0]`;
+return [
+`graph {
+  edge [len=1.5];
+  a -- b;
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a;
+  a -- e;
+  c -- f;
+  e -- f;
+  c -- a;
+}`,`graph {
+  edge [len=1.5];
+  a -- b;
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a;
+  a -- e ${red_selector};
+  c -- f;
+  e -- f;
+  c -- a;
+}`,`graph {
+  edge [len=1.5];
+  a -- b;
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a;
+  a -- e ${red_selector};
+  c -- f;
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b;
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a;
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b;
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a ${red_selector};
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b ${red_selector};
+  b -- c;
+  c -- d;
+  d -- f;
+  f -- a ${red_selector};
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b ${red_selector};
+  b -- c ${red_selector};
+  c -- d;
+  d -- f;
+  f -- a ${red_selector};
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b ${red_selector};
+  b -- c ${red_selector};
+  c -- d ${red_selector};
+  d -- f 
+  f -- a ${red_selector};
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b ${red_selector};
+  b -- c ${red_selector};
+  c -- d ${red_selector};
+  d -- f ${red_selector};
+  f -- a ${red_selector};
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f;
+  c -- a ${red_selector};
+}`,`graph {
+  edge [len=1.5];
+  a -- b ${red_selector};
+  b -- c ${red_selector};
+  c -- d ${red_selector};
+  d -- f ${red_selector};
+  f -- a ${red_selector};
+  a -- e ${red_selector};
+  c -- f ${red_selector};
+  e -- f ${red_selector};
+  c -- a ${red_selector};
+}`
+]
+}
+);
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>
+**Ejercicio 5**. Encuentre el flujo Máximo desde **a** hasta **b**:`
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(
+`digraph {
+  edge [len=1.8] [labeldistance=3.4] ;
+  a -> b [label=" "] [taillabel="8"];
+  a -> f [label=" "] [taillabel="5"];
+  b -> c [label=" "] [taillabel="5"];  
+  b -> g [label=" "] [taillabel="4"];  
+  g -> f [label=" "] [taillabel="3"];    
+  g -> h [label=" "] [taillabel="2"];
+  g -> e [label=" "] [taillabel="2"];
+  f -> e [label=" "] [taillabel="4"];
+  e -> h [label=" "] [taillabel="0"];
+  e -> d [label=" "] [taillabel="6"];
+  h -> d [label=" "] [taillabel="4"];
+  c -> d [label=" "] [taillabel="6"];
+}
+`, undefined)
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<mark>El flujo máximo de **a** hasta **b** es **8**.</mark>`
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<br>**Ejercicio 6**. Encuentre el flujo Máximo desde **a** hasta **d** del ejercicio anterior:`
+)});
+  main.variable(observer()).define(["adot","dots_graph__7_2","iterator__7_2"], function(adot,dots_graph__7_2,iterator__7_2){return(
+adot.bind(this)`${dots_graph__7_2[iterator__7_2]}${{engine: 'neato', zoom: false, useWorker: false }}`
+)});
+  main.variable(observer("viewof play__7_2")).define("viewof play__7_2", ["button"], function(button){return(
+button({value: "Reproducir animación"})
+)});
+  main.variable(observer("play__7_2")).define("play__7_2", ["Generators", "viewof play__7_2"], (G, _) => G.input(_));
+  main.variable(observer("iterator__7_2")).define("iterator__7_2", ["adot_iterator","dots_graph__7_2","delays__7_2","play__7_2","pass__7_2"], function(adot_iterator,dots_graph__7_2,delays__7_2,play__7_2,pass__7_2){return(
+adot_iterator(dots_graph__7_2.length, false, delays__7_2, play__7_2, pass__7_2)
+)});
+  main.variable(observer()).define(["md"], function(md){return(
+md `<mark>Camino 1 **(a -> b -> c -> d)** se puede enviar 4 unidades. **d = 5**.<br>
+Camino 2 **(a -> f -> e -> d)** se puede enviar 4 unidades. **d = 9**.<br>
+Camino 3 **(a -> b -> g -> h -> d)** se puede enviar 2 unidades. **d = 11**.<br>
+Camino 3 **(a -> b -> g -> e -> d)** se puede enviar 1 unidad. **d = 12**.
+</mark>
+`
+)});
+  main.variable(observer("pass__7_2")).define("pass__7_2", function(){return(
+Object.create({enable: false})
+)});
+  main.variable(observer("delays__7_2")).define("delays__7_2", ["gen_chars"], function(gen_chars){return(
+[1000,...gen_chars(7, '5000 ').split(' ').map(a => parseInt(a))]
+)});
+  main.variable(observer("dots_graph__7_2")).define("dots_graph__7_2", ["colors"], function(colors)
+{
+const label = (_str,_bgcolor = colors.white,_font_color = colors.black) => 
+  `<<table><tr><td><font color="${_font_color}"><b>${_str}</b></font></td></tr></table>>`
+const red_selector = `[color="${colors.red}",penwidth=3.0]`
+const blue_light_selector = `[color="${colors.blue_light}",penwidth=3.0]`
+const skin_selector = `[color="${colors.skin}",penwidth=3.0]`
+const green_selector = `[color="${colors.green}",penwidth=3.0]`
+const black = colors.black
+const white = colors.white
+const taillabel = (_str, with_label_mod = false) => 
+  with_label_mod ? `[taillabel=${label(_str)}]` : `[taillabel=${_str}]`
+const headlabel = (_str, with_label_mod = false) => 
+  with_label_mod ? `[headlabel=${label(_str)}]` : `[headlabel=${_str}]`
+return [
+`digraph {
+  edge [len=2.3] [labeldistance=3.4] ;
+  a -> b [label=" "] ${taillabel('8')};
+  a -> f [label=" "] ${taillabel('5')};
+  b -> c [label=" "] ${taillabel('5')};  
+  b -> g [label=" "] ${taillabel('4')};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('2')};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('6')};
+  h -> d [label=" "] ${taillabel('4')};
+  c -> d [label=" "] ${taillabel('6')};
+}`,
+// Camino 1 (a -> b -> c -> d) se puede enviar 4 unidades
+`digraph {
+  label="Camino 1 (a -> b -> c -> d) se puede enviar 5 unidades";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('0+5=5')}];
+  a -> b [label=" "] ${taillabel('8-5=3',true)} ${headlabel('0+5=5',true)} ${red_selector};
+  a -> f [label=" "] ${taillabel('5')};
+  b -> c [label=" "] ${taillabel('5-5=0',true)} ${headlabel('0+5=5',true)} ${red_selector};  
+  b -> g [label=" "] ${taillabel('4')};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('2')};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('6')};
+  h -> d [label=" "] ${taillabel('4')};
+  c -> d [label=" "] ${taillabel('6-5=1',true)} ${headlabel('0-5=5',true)} ${red_selector};
+}`,
+// Actualizando datos
+`digraph {
+  label="Actualizando datos";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('5')}];
+  a -> b [label=" "] ${taillabel('3')} ${headlabel('5')} ${skin_selector};
+  a -> f [label=" "] ${taillabel('5')};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')} ${skin_selector};  
+  b -> g [label=" "] ${taillabel('4')};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('2')};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('6')};
+  h -> d [label=" "] ${taillabel('4')};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')} ${skin_selector};
+}`,
+// Camino 2 (a -> f -> e -> d) se puede enviar 4 unidades
+`digraph {
+  label="Camino 2 (a -> f -> e -> d) se puede enviar 4 unidades";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('4+5=9')}];
+  a -> b [label=" "] ${taillabel('3')} ${headlabel('5')};
+  a -> f [label=" "] ${taillabel('5-4=1',true)} ${headlabel('0+4=4',true)} ${red_selector};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')};  
+  b -> g [label=" "] ${taillabel('4')};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('2')};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('4-4=0',true)} ${headlabel('0+4=4',true)} ${red_selector};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('6-4=2',true)} ${headlabel('0+4=4',true)} ${red_selector};
+  h -> d [label=" "] ${taillabel('4')};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')};
+}`,
+// Actualizando datos
+`digraph {
+  label="Actualizando datos";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('9')}];
+  a -> b [label=" "] ${taillabel('3')} ${headlabel('5')};
+  a -> f [label=" "] ${taillabel('1')} ${headlabel('4')} ${skin_selector};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')};  
+  b -> g [label=" "] ${taillabel('4')};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('2')};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('0')} ${headlabel('4')} ${skin_selector};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('2')} ${headlabel('4')} ${skin_selector};
+  h -> d [label=" "] ${taillabel('4')};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')};
+}`,
+// Camino 3 (a -> b -> g -> h -> d) se puede enviar 2 unidades
+`digraph {
+  label="Camino 3 (a -> b -> g -> h -> d) se puede enviar 2 unidades";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('2+9=11')}];
+  a -> b [label=" "] ${taillabel('3-2=1',true)} ${headlabel('2+5=7',true)}  ${red_selector};
+  a -> f [label=" "] ${taillabel('1')} ${headlabel('4')};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')};  
+  b -> g [label=" "] ${taillabel('4-2=2',true)} ${headlabel('0+2=2',true)} ${red_selector};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('2-2=0',true)} ${headlabel('0+2=2',true)} ${red_selector};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('0')} ${headlabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('2')} ${headlabel('4')};
+  h -> d [label=" "] ${taillabel('4-2=2',true)} ${headlabel('0+2=2',true)} ${red_selector};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')};
+}`,
+// Actualizando datos
+`digraph {
+  label="Actualizando datos";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('11')}];
+  a -> b [label=" "] ${taillabel('1')} ${headlabel('7')}  ${skin_selector};
+  a -> f [label=" "] ${taillabel('1')} ${headlabel('4')};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')};  
+  b -> g [label=" "] ${taillabel('2')} ${headlabel('2')} ${skin_selector};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('0')} ${headlabel('2')} ${skin_selector};
+  g -> e [label=" "] ${taillabel('2')};
+  f -> e [label=" "] ${taillabel('0')} ${headlabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('2')} ${headlabel('4')};
+  h -> d [label=" "] ${taillabel('2')} ${headlabel('2')} ${skin_selector};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')};
+}`,
+// Camino 4 (a -> b -> g -> e -> d) se puede enviar 1 unidad
+`digraph {
+  label="Camino 4 (a -> b -> g -> e -> d) se puede enviar 1 unidad";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('1+11=12')}];
+  a -> b [label=" "] ${taillabel('1-1=0',true)} ${headlabel('7+1=8',true)}  ${red_selector};
+  a -> f [label=" "] ${taillabel('1')} ${headlabel('4')};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')};  
+  b -> g [label=" "] ${taillabel('2-1=1',true)} ${headlabel('2+1=3',true)} ${red_selector};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('0')} ${headlabel('2')};
+  g -> e [label=" "] ${taillabel('2-1=1',true)} ${headlabel('0+1=1',true)} ${red_selector};
+  f -> e [label=" "] ${taillabel('0')} ${headlabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('2-1=1',true)} ${headlabel('4+1=5',true)} ${red_selector};
+  h -> d [label=" "] ${taillabel('2')} ${headlabel('2')};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')};
+}`,
+// Actualizando datos
+`digraph {
+  label="Camino 4 (a -> b -> g -> e -> d) se puede enviar 1 unidad";
+  edge [len=2.3] [labeldistance=3.4] ;
+  d [xlabel=${label('12')}];
+  a -> b [label=" "] ${taillabel('0')} ${headlabel('8')}  ${skin_selector};
+  a -> f [label=" "] ${taillabel('1')} ${headlabel('4')};
+  b -> c [label=" "] ${taillabel('0')} ${headlabel('5')};  
+  b -> g [label=" "] ${taillabel('1')} ${headlabel('3')} ${skin_selector};  
+  g -> f [label=" "] ${taillabel('3')};    
+  g -> h [label=" "] ${taillabel('0')} ${headlabel('2')};
+  g -> e [label=" "] ${taillabel('1')} ${headlabel('1')} ${skin_selector};
+  f -> e [label=" "] ${taillabel('0')} ${headlabel('4')};
+  e -> h [label=" "] ${taillabel('0')};
+  e -> d [label=" "] ${taillabel('1')} ${headlabel('5')} ${skin_selector};
+  h -> d [label=" "] ${taillabel('2')} ${headlabel('2')};
+  c -> d [label=" "] ${taillabel('1')} ${headlabel('5')};
+}`
+]}
+);
   main.variable(observer("dependencies")).define("dependencies", ["md"], function(md){return(
 md `---
 # Depedencias
@@ -5118,6 +7505,7 @@ md `---
   main.import("custom_graphviz", child1);
   main.import("adot_iterator", child1);
   main.import("a_target_blank", child1);
+  main.import("gen_chars", child1);
   const child2 = runtime.module(define2);
   main.import("more_info_es", child2);
   const child3 = runtime.module(define3);
@@ -5344,13 +7732,14 @@ require("d3@5")
   
 }
 )});
-  main.variable(observer()).define(["matrix_incd__3__14"], function(matrix_incd__3__14){return(
-matrix_incd__3__14
-)});
   main.variable(observer("vertices_matrix")).define("vertices_matrix", function(){return(
 (matrix) => {
   return matrix.map((a) => a.reduce((acc, cv) => acc + cv))
 }
+)});
+  main.variable(observer("colors")).define("colors", function(){return(
+Object.create({blue_light: '#7CFAFF', skin: '#FACFAD', red: 'red', green: 'green', blue: 'blue',
+                       black: 'black', white: 'white'})
 )});
   main.variable(observer("debug_test")).define("debug_test", ["md"], function(md){return(
 md `---
@@ -5424,6 +7813,14 @@ matrix_ady_no_simetrica__3__6
 )});
   main.variable(observer()).define(["custom_graphviz","get_graph_adj","matrix_adj__3__12"], function(custom_graphviz,get_graph_adj,matrix_adj__3__12){return(
 custom_graphviz(get_graph_adj(matrix_adj__3__12, true, true, 1.5))
+)});
+  main.variable(observer()).define(["custom_graphviz"], function(custom_graphviz){return(
+custom_graphviz(`
+digraph {
+edge [len=1.8]
+a -> b [taillabel=<<table bgcolor="black"><tr><td><font color="white"><b>A</b></font></td></tr></table>>];
+}
+`)
 )});
   return main;
 }
