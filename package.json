@@ -1,0 +1,14 @@
+{
+  "name": "1dbb5ea4edb292ae",
+  "main": "1dbb5ea4edb292ae@6098.js",
+  "version": "6098.0.0",
+  "homepage": "https://observablehq.com/d/1dbb5ea4edb292ae",
+  "author": {
+    "name": "alvaro-jmp",
+    "url": "https://observablehq.com/@alvaro-jmp"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
